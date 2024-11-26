@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lio's Portfolio 2024</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: none; /* Initially hidden */
+    }
+    .container.active {
+        display: block; /* Show when active */
+    }
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .intro {
+        font-family: 'Bookman Old Style', serif;
+        font-style: italic;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .photo-section {
+        margin-bottom: 40px;
+    }
+    .photo-item {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .photo-item img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+    }
+    .outro {
+        font-size: 24px;
+        font-family: 'Bookman Old Style', serif;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .button:hover {
+        background-color: #218838;
+    }
+</style>
+<script>
+    function showPage(pageId) {
+        // Hide all pages
+        const pages = document.querySelectorAll('.container');
+        pages.forEach(page => page.classList.remove('active'));
+
+        // Show the selected page
+        document.getElementById(pageId).classList.add('active');
+    }
+</script>
+</head>
+<body onload="showPage('page1')">
+
+<!-- Page 1 -->
+<div class="container" id="page1">
+    <div class="header">
+        <h1>Lio's Portfolio 2024</h1>
+        <p class="intro">Hello, my name is Lio, an amateur photographer exploring new skills. I started capturing moments 
+            with my phone, then upgraded to a DSLR camera in January 2024. I'm excited to try new things and show you some of my best work! Enjoy my photos!</p>
+    </div>
+    <br>
+    <div class="photo-section">
+        <div class="photo-item">
+            <h3>"Traffic Everywhere"</h3>
+            <img src="https://imgur.com/WX7xvvx.jpg" alt="Photo 1">
+            <p>Vehicles and pedestrians both contribute to traffic.</p>
+        </div>
+<br>
+        <div class="photo-item">
+            <h3>"Circled Creativity"</h3>
+            <img src="https://imgur.com/kdEG3Gu.jpg" alt="Photo 2">
+            <p>A circle of creativity, where pencils unite  and inspiration begins.</p>
+        </div>
+<br>
+        <div class="photo-item">
+            <h3>"Focus on Beauty"</h3>
+            <img src="https://imgur.com/DtcattX.jpg" alt="Photo 3">
+            <p>Two yellow flowers, one up close and personal, the other a gentle blur, showcasing the art of balance.</p>
+        </div>
+<br>
+        <div class="photo-item">
+            <h3>"Golden Glow"</h3>
+            <img src="https://imgur.com/q98gYRI.jpg" alt="Photo 4">
+            <p>Spreading warmth and happiness, one petal at a time.</p>
+        </div>
+<br>
+        <div class="photo-item">
+            <h3>"Omega Excellence"</h3>
+            <img src="https://imgur.com/oWcY32r.jpg" alt="Photo 5">
+            <p>Where precision meets elegance, the OMEGA way.</p>
+        </div>
+    </div>
+    <br>
+    <button class="button" onclick="showPage('page2')">Next</button>
+</div>
+
+<!-- Page 2 -->
+<div class="container" id="page2">
+    <div class="header">
+        <h1>Lio's Portfolio 2024</h1>
+        <p class="intro">Here are some of my top picks for my photography!</p>
+    </div>
+<br>
+    <div class="photo-section">
+        <div class="photo-item">
+            <h3>"Filipino Pride"</h3>
+            <img src="https://imgur.com/dLyNKV9.jpg" alt="Photo 6">
+            <p>The intricate details of a single peso, revealing national pride.</p>
+        </div>
+<br>
+        <div class="photo-item">
+            <h3>"Patterned Stones"</h3>
+            <img src="https://imgur.com/o6P3lQf.jpg" alt="Photo 7">
+            <p>Where nature's artistry meets serenity.</p>
+        </div>
+<br>
+        <div class="photo-item">
+            <h3>"The Poisoned Grin"</h3>
+            <img src="https://imgur.com/1IsEOBK.jpg" alt="Photo 8">
+            <p>A depiction of Norman Osborn's smile, revealing the corrosive impact of his darker persona.</p>
+        </div>
+<br>
+        <div class="photo-item">
+            <h3>"Malunggay"</h3>
+            <img src="https://imgur.com/6eW2baw.jpg" alt="Photo 9">
+            <p>A very common plant in Philippines.</p>
+        </div>
+<br>
+        <div class="photo-item">
+            <h3>"DP & Wolvie - Best Friends"</h3>
+            <img src="https://imgur.com/UueBIHm.jpg" alt="Photo 10">
+            <p>This captures a playful blend of 2 iconic superheroes symbol.</p>
+        </div>
+    </div>
+<br>
+    <button class="button" onclick="showPage('page1')">Back</button>
+<br>
+    <div class="outro">
+        Thank You for Viewing! I hope you enjoyed it!<br>– Lio
+    </div>
+</div>
+
+</body>
+</html>
